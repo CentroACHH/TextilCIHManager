@@ -9,7 +9,7 @@ const EntryForm = ({ onSuccess = () => {} }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:2000/api/products");
+const res = await axios.get("https://textilmanager-backend.onrender.com/api/products");
         setProducts(res.data);
       } catch (error) {
         console.error("Error al obtener productos", error);
@@ -23,10 +23,11 @@ const EntryForm = ({ onSuccess = () => {} }) => {
     if (!productId || !cantidad) return;
 
     try {
-      await axios.post("http://localhost:2000/api/entries", {
-        productId,
-        cantidad: parseInt(cantidad),
-      });
+     await axios.post("https://textilmanager-backend.onrender.com/api/entries", {
+  productId,
+  cantidad: parseInt(cantidad),
+});
+
       setProductId("");
       setCantidad("");
       onSuccess(); // actualizar tabla

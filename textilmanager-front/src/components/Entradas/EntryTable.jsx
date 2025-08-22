@@ -6,7 +6,7 @@ const EntryTable = ({ refresh }) => {
 
   const fetchEntries = async () => {
     try {
-      const res = await axios.get("http://localhost:2000/api/entries");
+const res = await axios.get("https://textilmanager-backend.onrender.com/api/entries");
       setEntries(res.data);
     } catch (error) {
       console.error("Error al obtener entradas:", error);
@@ -16,7 +16,7 @@ const EntryTable = ({ refresh }) => {
   const handleDelete = async (id) => {
     if (!window.confirm("¿Deseas eliminar esta entrada?")) return;
     try {
-      await axios.delete(`http://localhost:2000/api/entries/${id}`);
+await axios.delete(`https://textilmanager-backend.onrender.com/api/entries/${id}`);
       fetchEntries();
     } catch (error) {
       console.error("Error al eliminar entrada:", error);
