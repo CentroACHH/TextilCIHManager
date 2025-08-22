@@ -1,0 +1,251 @@
+body {
+  background-color: #001f2f;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.product-form {
+  max-width: 600px; 
+  width: 150%;
+  margin: 2rem auto; 
+  padding: 2rem;
+  background-color: #001f2f;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box; 
+  overflow: auto; 
+}
+
+
+.product-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(255, 125, 0);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: rgb(255, 236, 209);
+}
+
+.form-group input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 236, 209);
+  color: #000;
+  width: -webkit-fill-available; 
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: rgb(255, 125, 0);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: rgb(255, 100, 0);
+  transition: background-color 0.3s;
+}
+
+html, body, #root {
+  height: 100%;
+ 
+}
+
+/**/
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background-color: rgb(21, 97, 109);
+  color: white;
+}
+
+table td {
+  background-color: rgb(255, 236, 209);
+}
+
+.product-list-container {
+  background-color: rgb(0, 28, 48); 
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.product-list-container h2 {
+  color: rgb(255, 236, 209); 
+  margin-bottom: 1.5rem;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(21, 97, 109); 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-table th, .product-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+  border-top: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.product-table th {
+  background-color: rgb(120, 41, 15); 
+  color: rgb(255, 236, 209); 
+}
+
+.product-table tr:hover {
+  background-color: rgba(255, 125, 0, 0.2); 
+}
+
+/*Boton edit-borrar*/
+
+.btn-edit {
+  background-color: #15756d;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-color: #1c8b80;
+}
+
+.btn-delete {
+  background-color: #78290f;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #9c3a1a;
+}
+
+/*modal+*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: rgb(255, 236, 209);
+  padding: 20px;
+  border-radius: 16px;
+  width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(120, 41, 15);
+}
+
+.productos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.productos-header button {
+  background-color: rgb(255, 125, 0);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*errore*/
+form small.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: 2px;
+}
+form h3 {
+  margin-bottom: 10px;
+}
+form input {
+  width: 100%; 
+  padding: 6px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+form button[type="submit"] {
+  background-color: rgb(21, 97, 109);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form-container {
+  margin-top: 20px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.salidas-container .product-table {
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  max-width: 100%;
+}

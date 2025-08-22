@@ -1,2 +1,2 @@
-# TextilCIHManager
-Proyecto de Centro de Impresión Huahuchinango
+# textilmanager
+proyecto de estadia

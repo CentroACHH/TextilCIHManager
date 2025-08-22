@@ -1,0 +1,114 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: rgb(120, 41, 15); 
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 236, 209); 
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: rgb(255, 236, 209); 
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: rgb(255, 125, 0); 
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;   
+  height: 100vh;      
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(245, 247, 248); 
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.content {
+  overflow-y: auto;
+  padding: 2rem;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+/* Contenedor tabla */
+.product-table-container {
+  max-height: 400px; 
+  overflow-y: auto;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Encabezado fijo */
+.product-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  min-width: 900px;
+}
+
+.product-table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgb(120, 41, 15); 
+  color: rgb(255, 236, 209); 
+}
+
+
+/* Título principal */
+h1 {
+  color: rgb(255, 236, 209); 
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Subtítulos */
+h2, h3 {
+  color: rgb(255, 125, 0); 
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Etiquetas de formulario */
+label {
+  color: rgb(255, 236, 209); 
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Texto dentro de tablas */
+.product-table td {
+  color: rgb(0, 0, 0); 
+  padding: 0.5rem;
+}
