@@ -8,7 +8,7 @@ const ReportTable = ({ data, onDelete }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:2000/api/reports/${id}`);
+      await axios.delete(`https://textilmanager-backend.onrender.com/api/reports/${id}`);
       onDelete();
     } catch (error) {
       console.error("Error al eliminar reporte:", error);

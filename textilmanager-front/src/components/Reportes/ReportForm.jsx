@@ -9,7 +9,7 @@ const ReportForm = ({ onSave }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:2000/api/products").then((res) => {
+    axios.get("https://textilmanager-backend.onrender.com/api/products").then((res) => {
       setProducts(res.data);
     });
   }, []);
@@ -17,7 +17,7 @@ const ReportForm = ({ onSave }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newReport = { tipo, producto, cantidad, observaciones };
-    await axios.post("http://localhost:2000/api/reports", newReport);
+    await axios.post("https://textilmanager-backend.onrender.com/api/reports", newReport);
     onSave(); // refrescar la tabla
     setTipo("entrada");
     setProducto("");

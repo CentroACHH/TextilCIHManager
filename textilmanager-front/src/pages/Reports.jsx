@@ -11,7 +11,7 @@ const Reports = () => {
 
   const fetchReports = async () => {
     try {
-      const res = await fetch("http://localhost:2000/api/reports");
+      const res = await fetch("https://textilmanager-backend.onrender.com/api/reports");
       const data = await res.json();
       setReports(data);
     } catch (error) {

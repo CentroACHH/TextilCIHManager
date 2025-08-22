@@ -35,10 +35,10 @@ const ProductForm = ({ productoEditando, onSuccess = () => {} }) => {
     try {
       if (product._id) {
         // Editar producto
-        await axios.put(`http://localhost:2000/api/products/${product._id}`, product);
+        await axios.put(`https://textilmanager-backend.onrender.com/api/products/${product._id}`, product);
       } else {
         // Crear nuevo producto
-        await axios.post("http://localhost:2000/api/products", product);
+        await axios.post("https://textilmanager-backend.onrender.com/api/products", product);
       }
 
       onSuccess();
